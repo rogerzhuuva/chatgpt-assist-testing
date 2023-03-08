@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Runner App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@openai/api@1.1.0/build/web.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Runner App</h1>
+	</header>
+	<main>
+		<section class="background-image">
+			<!-- Add content here -->
+            <b>欢迎使用我们的跑步伴侣软件！这是一款专为跑步者打造的应用程序，可以帮助您在跑步过程中更好地记录和管理跑步数据。我们的应用程序可以跟踪您的跑步路线、距离、时间、速度、卡路里等数据，并为您生成详细的跑步报告。此外，您还可以设置自己的跑步目标，我们的应用程序将为您提供个性化的跑步计划和提醒。我们的跑步伴侣软件是一款功能强大、易于使用的应用程序，帮助您在跑步过程中更好地管理您的健康和体能。</b>
+		</section>
+		<section class="run-info">
+			<!-- Add content here -->
+		</section>
+        <img src="running.png" alt="boy and gril marathoners">
+        <h1>OpenAI API Example</h1>
+        <input type="text" id="prompt" placeholder="Enter your prompt">
+        <button onclick="generateText()">Generate AI Text</button>
+        <div id="response"></div>
+        <script>
+        function generateText() {
+         const prompt = document.getElementById('prompt').value;
+            getAIResponse(prompt);
+        }
+  
+        function getAIResponse(prompt) {
+            // Put the getAIResponse function code here
+        }
+    </script>
+	</main>
+    
+	<footer>
+		<p>&copy; 2023 Runner App</p>
+	</footer>
+	<script src="app.js"></script>
+</body>
+</html>
+
